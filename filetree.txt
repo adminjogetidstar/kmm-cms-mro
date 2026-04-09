@@ -1,0 +1,78 @@
+┣ 📂api
+┃ ┣ 📜dashboard.ts
+┃ ┣ 📜floorAreas.ts
+┃ ┣ 📜helper.ts
+┃ ┣ 📜index.ts
+┃ ┣ 📜locations.ts
+┃ ┣ 📜menus.ts
+┃ ┣ 📜notification.ts
+┃ ┣ 📜profile.ts
+┃ ┣ 📜README.md
+┃ ┣ 📜roles.ts
+┃ ┣ 📜roomAreas.ts
+┃ ┣ 📜ticketDetail.ts
+┃ ┗ 📜workCategories.ts
+┣ 📂components
+┃ ┣ 📂ui
+┃ ┃ ┣ 📜Button.tsx
+┃ ┃ ┣ 📜FileInput.tsx
+┃ ┃ ┣ 📜index.ts
+┃ ┃ ┣ 📜Input.tsx
+┃ ┃ ┣ 📜MDXTextarea.tsx
+┃ ┃ ┗ 📜Textarea.tsx
+┃ ┣ 📜AttachmentGrid.tsx
+┃ ┣ 📜Badge.tsx
+┃ ┣ 📜DateRangeFilter.css
+┃ ┣ 📜DateRangeFilter.tsx
+┃ ┣ 📜index.ts
+┃ ┣ 📜Modal.tsx
+┃ ┗ 📜TicketActionButtons.tsx
+┣ 📂constants
+┃ ┣ 📜index.ts
+┃ ┗ 📜queryKey.ts
+┣ 📂hooks
+┃ ┣ 📜index.ts
+┃ ┣ 📜useAuthData.ts
+┃ ┣ 📜useBool.ts
+┃ ┣ 📜useIsMobile.ts
+┃ ┣ 📜useLogout.ts
+┃ ┗ 📜useStatus.ts
+┣ 📂redux
+┃ ┣ 📂slices
+┃ ┃ ┗ 📜authSlice.ts
+┃ ┣ 📜hooks.ts
+┃ ┣ 📜index.ts
+┃ ┣ 📜provider.tsx
+┃ ┗ 📜store.ts
+┣ 📂schemas
+┃ ┗ 📜profile.ts
+┣ 📂tanstack
+┃ ┣ 📜assignees.ts
+┃ ┣ 📜dashboard.ts
+┃ ┣ 📜floorAreas.ts
+┃ ┣ 📜index.ts
+┃ ┣ 📜locations.ts
+┃ ┣ 📜menus.ts
+┃ ┣ 📜profile.ts
+┃ ┣ 📜reasonPendings.ts
+┃ ┣ 📜reasonRejects.ts
+┃ ┣ 📜reasonTransfers.ts
+┃ ┣ 📜roles.ts
+┃ ┣ 📜roomAreas.ts
+┃ ┣ 📜stores.ts
+┃ ┣ 📜ticketPriorities.ts
+┃ ┣ 📜tickets.ts
+┃ ┣ 📜users.ts
+┃ ┗ 📜workCategories.ts
+┣ 📂types
+┃ ┗ 📜backend.ts
+┣ 📂utils
+┃ ┣ 📜assignType.ts
+┃ ┣ 📜cn.ts
+┃ ┣ 📜fileValidation.ts
+┃ ┣ 📜index.ts
+┃ ┣ 📜navigator.ts
+┃ ┗ 📜pushNotification.ts
+┣ 📜filetree.txt
+┣ 📜index.ts
+┗ 📜README.md
