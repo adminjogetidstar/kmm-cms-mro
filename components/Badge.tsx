@@ -36,14 +36,11 @@ export const Badge: React.FC<BadgeProps> = ({ status, className = '' }) => {
 			case 'rejected':
 			case 'reject':
 				return 'bg-gray-600 text-white';
-		case 'closed':
-			return 'bg-green-50 text-green-600';
-		case 'breach rsp':
-		case 'breach_rsp':
-		case 'breach rsl':
-		case 'breach_rsl':
-			return 'bg-red-500 text-white';
-		// Priority
+			case 'closed':
+				return 'bg-green-50 text-green-600';
+			case 'breach':
+				return 'bg-red-500 text-white';
+			// Priority
 			case 'high':
 				return 'bg-red-500 text-white';
 			case 'medium':
@@ -63,12 +60,7 @@ export const Badge: React.FC<BadgeProps> = ({ status, className = '' }) => {
 	};
 
 	const getDisplayText = () => {
-		if (
-			statusKey === 'breach rsp' ||
-			statusKey === 'breach_rsp' ||
-			statusKey === 'breach rsl' ||
-			statusKey === 'breach_rsl'
-		) {
+		if (statusKey === 'breach') {
 			return 'Breach';
 		}
 		return status?.split(/\s/).join(' ').ucwords() || '-';

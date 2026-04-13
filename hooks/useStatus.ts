@@ -10,9 +10,9 @@ const BASE_TICKET_STATUS = {
 	isTransferred: false,
 	isRejected: false,
 	isClosed: false,
-	isBreachRsp: false,
-	isBreachRsl: false,
+	isBreach: false,
 };
+
 
 const BASE_PRIORITY = {
 	isHigh: false,
@@ -46,15 +46,11 @@ export const useStatus = (ticketStatus?: BadgeType, priority?: BadgeType) => {
 			case 'rejected':
 			case 'reject':
 				return { ...BASE_TICKET_STATUS, isRejected: true };
-		case 'closed':
-			return { ...BASE_TICKET_STATUS, isClosed: true };
-		case 'breach rsp':
-		case 'breach_rsp':
-			return { ...BASE_TICKET_STATUS, isBreachRsp: true };
-		case 'breach rsl':
-		case 'breach_rsl':
-			return { ...BASE_TICKET_STATUS, isBreachRsl: true };
-		default:
+			case 'closed':
+				return { ...BASE_TICKET_STATUS, isClosed: true };
+			case 'breach':
+				return { ...BASE_TICKET_STATUS, isBreach: true };
+			default:
 				return BASE_TICKET_STATUS;
 		}
 	};
